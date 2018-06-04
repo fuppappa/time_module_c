@@ -5,7 +5,7 @@
 
 
 
-	static __init init main(void)
+	static int init_main(void)
 	{
 	  struct timespec time;
 	  long timestamp;
@@ -23,7 +23,7 @@
 
 
 
-	static __exit cleanup_main(void)
+	static void cleanup_main(void)
 	{
 
 	 printk("goobye time module ");
